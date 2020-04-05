@@ -1,12 +1,17 @@
+def third_challenge
 
-require_relative 'spec_helper'
-require_relative '../lib/bonus.rb'
-
-describe "#bonus" do
-# remove the 'x' from the 'xit' below to activate this test!
-it "uses the []= method to change the hero and heroine's status from alive to dead" do
-  expect(bonus[:montague][:hero][:status]).to eq("dead")
-  expect(bonus[:capulet][:heroine][:status]).to eq("dead")
-
-end
+  epic_tragedy = {
+   :montague => {
+      :patriarch => {name: "Lord Montague", age: "53"},
+      :matriarch => {name: "Lady Montague", age: "54"},
+      :hero => {name: "Romeo", age: "15", status: "alive"},
+      :hero_friends => []
+   }, 
+   :capulet => {
+      :patriarch => {name: "Lord Capulet", age: "50"},
+      :matriarch => {name: "Lady Capulet", age: "51"},
+      :heroine => {name: "Juliette", age: "15", status: "alive"},
+      :heroine_friends => []
+   }
+  }
 end
